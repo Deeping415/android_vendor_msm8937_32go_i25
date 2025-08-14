@@ -1,0 +1,27 @@
+
+// @file sns_amd_log.proto
+//
+// Defines log messages used by the Sns_amd Sensor
+//
+// Copyright (c) 2017 Qualcomm Technologies, Inc.
+// All Rights Reserved.
+// Confidential and Proprietary - Qualcomm Technologies, Inc.
+syntax = "proto2";
+import "nanopb.proto";
+import "sns_amd.proto";
+
+// Sensor State log message
+// This definition is used by sns_amd sensor to log algorithm
+// computation state information when generating sensor state
+// log of type SNS_DIAG_SENSOR_STATE_LOG_INTERNAL as defined in
+// sns_diag_service.h
+
+message sns_amd_sensor_state_log_internal
+{
+  required  fixed64                 timestamp   = 1; // time when the sensor data was sampled
+  required  float                   accel_x     = 2; // acceleration along x axis
+  required  float                   accel_y     = 3; // acceleration along y axis
+  required  float                   accel_z     = 4; // acceleration along z axis
+  required  sns_amd_event_type      amd_result  = 5; // absolute motion detection algorithm result
+}
+

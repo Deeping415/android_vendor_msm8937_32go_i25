@@ -1,0 +1,17 @@
+libxtc_hardware_info_jni.so
+libxtc_drain_water_jni.so
+libxtc_smartPA_calibrate_jni.so
+libxtc_smartPAcal_jni.so
+libFaceDetectCA.so
+libmegface.so
+libMegviiUnlock.so
+libMegviiUnlock-jni-1.2.so
+libqti-perfd-client.so
+libadsprpc.so
+libcdsprpc.so
+libsdsprpc.so
+libqvrservice_client.so
+libvraudio_client.so
+libqvrcamera_client.so
+liblldservice_client.qti.so
+libOpenCL.so
